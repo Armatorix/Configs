@@ -27,3 +27,4 @@ echo "gvm use $GOVERSION 1>/dev/null" >> .bash.conf
 #Copy configs
 ls -pa | grep -v / | grep -vE 'README|setup' | xargs -I {} cp {} ~/
 rm -rf ../Configs
+echo "source .bash.conf" >> ~/.bashrc
