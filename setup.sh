@@ -25,5 +25,5 @@ gvm install $GOVERSION -B
 cat "gvm use $GOVERSION 1>/dev/null" >> .bash.conf
 
 #Copy configs
-ls -pa | grep -v / | grep -vE 'README|setup' | xargs -I {} copy {} ~/
+ls -pa | grep -v / | grep -vE 'README|setup' | xargs -I {} cp {} ~/
 rm -rf ../Configs

@@ -10,3 +10,9 @@ prefix + I (upper i)
 :PluginInstall
 ```
 
+
+
+## Additionals:
+Chrome
+VS Code
+
