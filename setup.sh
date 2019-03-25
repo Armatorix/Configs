@@ -20,7 +20,7 @@ sudo add-apt-repository ppa:ultradvorka/ppa && sudo apt-get update && sudo apt-g
 
 #Go installation
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-source /home/armatorix/.gvm/scripts/gvm
+source ~/.gvm/scripts/gvm
 gvm install $GOVERSION -B
 echo "gvm use $GOVERSION 1>/dev/null" >> .bash.conf
 
