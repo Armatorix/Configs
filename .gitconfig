@@ -1,0 +1,46 @@
+[core]
+	editor = vim
+[user]
+	email = sokolwojtek1@gmail.com
+	name = Wojciech Sokołowski
+[push]
+	default = current
+[grep]
+    	extendRegexp = true
+	lineNumber = true
+[color]
+	branch = auto
+    	diff = auto
+    	status = auto
+    	ui = true
+[commit]
+    	gpgsign = false
+    	verbose = false
+[diff "bin"]
+    	textconv = hexdump -v -C
+[help]
+    	autocorrect = 1
+[status]
+    	showuntrackedfiles = all
+[alias]
+    	aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /' | sort
+    	amend = commit --amend --no-edit
+  	update = pull --rebase --strategy-option theirs origin
+    	b = checkout -B
+    	ca = diff --cached
+    	co = checkout
+    	graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+    	lg = log -p
+  	ll = log --pretty=oneline --abbrev-commit
+    	sha = rev-parse HEAD
+    	st = status
+    	uncommit = reset HEAD~
+    	unstage = reset HEAD --
+    	clear = reset --hard HEAD
+[credential]
+    	helper = cache --timeout=3600
+[filter "lfs"]
+    	smudge = git-lfs smudge -- %f
+    	process = git-lfs filter-process
+    	required = true
+    	clean = git-lfs clean -- %f
