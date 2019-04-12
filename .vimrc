@@ -29,7 +29,7 @@ map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
 
-#line highlight
+" line highlight
 color desert
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey40
