@@ -6,8 +6,7 @@ echo "#################################" >> ~/.bash.conf
 GOVERSION="go1.12"
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install -y vim git wget curl bison tmux tree htop texmaker gcc make
-sudo apt-get install -y pylint golint 
+sudo apt-get install -y vim git wget curl bison tree htop gcc make
 
 # tmux plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
