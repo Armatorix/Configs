@@ -13,3 +13,7 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 source ~/.gvm/scripts/gvm
 gvm install $(gvm listall | grep -v 'release' | tail -n2 | head -n1) -B
 gvm use $(gvm listall | grep -v 'release' | tail -n2 | head -n1) --default
+
+# jump
+wget https://github.com/gsamokovarov/jump/releases/download/v0.40.0/jump_0.40.0_amd64.deb && sudo dpkg -i jump_0.40.0_amd64.deb
+jump shell >> ~/.bashrc
